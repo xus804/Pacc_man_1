@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Pac-Man Mobile Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="ui">SCORE: <span id="score">0</span></div>
+        <canvas id="pacmanCanvas"></canvas>
+        
+        <div class="dpad">
+            <button class="btn up" id="up">^</button>
+            <div class="dpad-middle">
+                <button class="btn left" id="left"><</button>
+                <button class="btn right" id="right">></button>
+            </div>
+            <button class="btn down" id="down">v</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
