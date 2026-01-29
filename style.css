@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Arial Black', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    overflow: hidden;
+    touch-action: none;
+}
+
+#ui { font-size: 20px; margin-bottom: 5px; color: #ffff00; }
+
+canvas {
+    border: 3px solid #2222ff;
+    box-shadow: 0 0 15px #2222ff;
+    background: #000;
+}
+
+/* D-PAD Layout */
+.dpad {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dpad-middle {
+    display: flex;
+    gap: 50px; /* Space for the thumb to rest in the middle */
+}
+
+.btn {
+    width: 65px;
+    height: 65px;
+    background: #222;
+    border: 2px solid #444;
+    color: yellow;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.btn:active {
+    background: #444;
+    border-color: yellow;
+    transform: scale(0.95);
+}
